@@ -166,7 +166,6 @@ if (typeof describe === 'function') {
 
 
 
-
 // **********
 //   HINTS
 // **********
