@@ -17,9 +17,9 @@ const vowel = ['a', 'e', 'i', 'o', 'u']
 const pigLatin = (word) => {
  word = word.trim(' ')
  word= word.toLowerCase() 
-//  wordSplitArr = word.split('') // this convert the word(string) to an array.
+ wordSplitArr = word.split('') // this convert the word(string) to an array.
 //  console.log(wordSplitArr)
-//  checkVowel()
+ checkVowel(word)
 
 
 //Ceaser's way 1 I like this one but still need to ask matt about my way why it didn't work*********************
@@ -55,45 +55,47 @@ else {
 
 
 
+
+
  //**********Ying's way bumping into a wall need to ask MATT about the if statement and it's not working the way I wanted. 
 
 // if the first character is a vowel
-// function checkVowel(){
-//      if(wordSplitArr[0]=== "a"||"e"||"i"||"o"||"u"){  
-//           console.log( word +"yay") // i know this one works, but don't know how to get it out of the loop.  
+
+//code has been cleaned up quite a bit. 
+//in node main.js when typing the word, it satisfy the condition,
+// but fails the test though, if troubleshoot further, the test can be passed. 
+
+
+// function checkVowel(word){
+//   console.log(wordSplitArr[0]);
+//      if(wordSplitArr[0]=== "a"|| 
+//         wordSplitArr[0]=== "e" || 
+//         wordSplitArr[0]=== "i" || 
+//         wordSplitArr[0]=== "o" || 
+//         wordSplitArr[0]=== "u") {  
+//         console.log( word +"yay") // i know this one works, but don't know how to get it out of the loop.  
 //           return true;
 //         }
 
-//        if(wordSplitArr[0] !== "a"||"e"||"i"||"o"||"u"){       
-//         for (let index = 0; index<word.length; index++){
+//        else if(wordSplitArr[0]!== "a"|| 
+//                wordSplitArr[0]!== "e" || 
+//                wordSplitArr[0]!== "i" || 
+//                wordSplitArr[0]!== "o" || 
+//                wordSplitArr[0]!== "u") {        
 
-//           nonVowel = wordSplitArr.shift();
-//           console.log(wordSplitArr[index])  12345 23451ay 3451ay 45ay 5ay undefine ay
-              // break
-          //  console.log(wordSplitArr[index])
-          // just to see what's the first letter print out
-        // }           
-        // }  console.log(wordSplitArr.join('') + nonVowel + "ay") 
+//              for (let index = 0; index<word.length; index++){
+//                   nonVowel = wordSplitArr.shift();
+//                   console.log(wordSplitArr[index])  
+//                   break
+
+              //  console.log(wordSplitArr[index])
+              // just to see what's the first letter print out
+
+  //           }           
+  //       }  console.log(wordSplitArr.join('') + nonVowel + "ay") 
         
-        //example for splice
-        // const months = ['Jan', 'March', 'April', 'June'];
-        // months.splice(1, 0, 'Feb');
-        // inserts at index 1
-        // console.log(months);
-        // expected output: Array ["Jan", "Feb", "March", "April", "June"]
-        //months.splice(4, 1, 'May');
-        // replaces 1 element at index 4
-        //console.log(months);
-        // expected output: Array ["Jan", "Feb", "March", "April", "May"]
-    // }
-  // }    
-
-    
-    // example for shifting the first letter
-    // const array1 = [1, 2, 3];
-    // const firstElement = array1.shift();
-    // console.log(array1); // expected output: Array [2, 3]
-    // console.log(firstElement); // expected output: 1
+  //   }
+  // }
 
   
 
